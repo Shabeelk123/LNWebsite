@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import {
-  Award, Zap, Globe, Clock, Shield, CheckCircle,
+  Award, Zap, Globe, Shield, CheckCircle,
   Users, Star, ChevronRight, Phone, ArrowRight
 } from 'lucide-react';
 import ServiceCard from '../components/ui/ServiceCard';

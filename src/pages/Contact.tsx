@@ -1,5 +1,4 @@
 import { useState, type FormEvent } from 'react';
-import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Clock, MessageCircle } from 'lucide-react';
 import ScrollReveal from '../components/ui/ScrollReveal';
 import { usePageTitle } from '../hooks/useScrollReveal';
@@ -18,27 +17,27 @@ const SERVICES = [
 ];
 
 const CONTACT_DETAILS = [
-  { Icon: Phone,         label: 'Phone',    val: '+971 58 860 2934',                      href: 'tel:+971588602934' },
-  { Icon: MessageCircle, label: 'WhatsApp', val: 'Message us on WhatsApp',                href: 'https://wa.me/971588602934' },
-  { Icon: Mail,          label: 'Email',    val: 'info@lamiyaalnujoom.ae',                href: 'mailto:info@lamiyaalnujoom.ae' },
-  { Icon: MapPin,        label: 'Office',   val: '401 NGI Building, Port Saeed, Deira, Dubai, UAE', href: '#map' },
-  { Icon: Clock,         label: 'Hours',    val: '24/7 Emergency | Office: Sun–Thu 8am–6pm', href: undefined },
+  { Icon: Phone, label: 'Phone', val: '+971 58 860 2934', href: 'tel:+971588602934' },
+  { Icon: MessageCircle, label: 'WhatsApp', val: 'Message us on WhatsApp', href: 'https://wa.me/971588602934' },
+  { Icon: Mail, label: 'Email', val: 'info@lamiyaalnujoom.ae', href: 'mailto:info@lamiyaalnujoom.ae' },
+  { Icon: MapPin, label: 'Office', val: '401 NGI Building, Port Saeed, Deira, Dubai, UAE', href: '#map' },
+  { Icon: Clock, label: 'Hours', val: '24/7 Emergency | Office: Sun–Thu 8am–6pm', href: undefined },
 ];
 
 export default function Contact() {
   usePageTitle('Contact Us');
 
   const [formData, setFormData] = useState<FormData>({
-    firstName:'', lastName:'', email:'', phone:'', company:'', service:'', message:'',
+    firstName: '', lastName: '', email: '', phone: '', company: '', service: '', message: '',
   });
-  const [errors, setErrors]     = useState<Errors>({});
+  const [errors, setErrors] = useState<Errors>({});
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
 
   const validate = (): boolean => {
     const e: Errors = {};
     if (!formData.firstName.trim()) e.firstName = 'First name is required.';
-    if (!formData.lastName.trim())  e.lastName  = 'Last name is required.';
+    if (!formData.lastName.trim()) e.lastName = 'Last name is required.';
     if (!formData.email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email))
       e.email = 'A valid email address is required.';
     if (!formData.service) e.service = 'Please select a service.';
@@ -61,7 +60,7 @@ export default function Contact() {
     await new Promise(r => setTimeout(r, 1200));
     setSubmitting(false);
     setSubmitted(true);
-    setFormData({ firstName:'', lastName:'', email:'', phone:'', company:'', service:'', message:'' });
+    setFormData({ firstName: '', lastName: '', email: '', phone: '', company: '', service: '', message: '' });
   };
 
   return (

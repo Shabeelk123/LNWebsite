@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { MessageCircle, Phone } from 'lucide-react';
 import './FloatingButtons.css';
 
