@@ -6,7 +6,7 @@ export default function FloatingButtons() {
     <div className="floating-btns" aria-label="Quick contact buttons">
       {/* WhatsApp */}
       <a
-        href="https://wa.me/971588602934?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20your%20technical%20services."
+        href="https://wa.me/971?569326544&text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20your%20technical%20services."
         target="_blank"
         rel="noopener noreferrer"
         className="floating-btn floating-wa"
@@ -18,7 +18,7 @@ export default function FloatingButtons() {
 
       {/* Call */}
       <a
-        href="tel:+971588602934"
+        href="tel:+971569326544"
         className="floating-btn floating-call"
         aria-label="Call us now"
       >

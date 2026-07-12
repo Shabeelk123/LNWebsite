@@ -17,8 +17,8 @@ const SERVICES = [
 ];
 
 const CONTACT_DETAILS = [
-  { Icon: Phone, label: 'Phone', val: '+971 58 860 2934', href: 'tel:+971588602934' },
-  { Icon: MessageCircle, label: 'WhatsApp', val: 'Message us on WhatsApp', href: 'https://wa.me/971588602934' },
+  { Icon: Phone, label: 'Phone', val: '+971 569326544', href: 'tel:+971569326544' },
+  { Icon: MessageCircle, label: 'WhatsApp', val: 'Message us on WhatsApp', href: 'https://wa.me/971569326544' },
   { Icon: Mail, label: 'Email', val: 'info@lamiyaalnujoom.ae', href: 'mailto:info@lamiyaalnujoom.ae' },
   { Icon: MapPin, label: 'Office', val: '401 NGI Building, Port Saeed, Deira, Dubai, UAE', href: '#map' },
   { Icon: Clock, label: 'Hours', val: '24/7 Emergency | Office: Sun–Thu 8am–6pm', href: undefined },
@@ -108,11 +108,11 @@ export default function Contact() {
               </div>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.625rem' }}>
-                <a href="tel:+971588602934" className="btn btn-primary" style={{ justifyContent: 'center' }}>
+                <a href="tel:+971569326544" className="btn btn-primary" style={{ justifyContent: 'center' }}>
                   <Phone size={16} /> Call Us Now
                 </a>
                 <a
-                  href="https://wa.me/971588602934" target="_blank" rel="noopener noreferrer"
+                  href="https://wa.me/971569326544" target="_blank" rel="noopener noreferrer"
                   className="btn" style={{ background: '#25d366', color: '#fff', justifyContent: 'center', border: 'none' }}
                 >
                   <MessageCircle size={16} /> WhatsApp
@@ -156,7 +156,7 @@ export default function Contact() {
 
                   <div className="form-field">
                     <label htmlFor="cf-phone">Phone Number</label>
-                    <input id="cf-phone" name="phone" type="tel" placeholder="+971 50 123 4567"
+                    <input id="cf-phone" name="phone" type="tel" placeholder="+971 56 9326544"
                       value={formData.phone} onChange={handleChange} autoComplete="tel" />
                   </div>
 

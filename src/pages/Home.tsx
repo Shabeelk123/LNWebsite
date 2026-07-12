@@ -280,7 +280,7 @@ export default function Home() {
                 <Phone size={16} /> Get a Quote
               </Link>
               <a
-                href="https://wa.me/971588602934"
+                href="https://wa.me/971569326544"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-outline"

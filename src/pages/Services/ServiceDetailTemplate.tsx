@@ -8,12 +8,12 @@ import type { ServiceItem } from '../../data/services';
 import './ServiceDetail.css';
 
 const serviceImages: Record<string, string> = {
-  'manpower-supply':        'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&q=80&auto=format&fit=crop',
+  'manpower-supply': 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&q=80&auto=format&fit=crop',
   'mep-technical-services': 'https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=700&q=80&auto=format&fit=crop',
-  'civil-maintenance':      'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80&auto=format&fit=crop',
+  'civil-maintenance': 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80&auto=format&fit=crop',
   'cleaning-soft-services': 'https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=700&q=80&auto=format&fit=crop',
-  'security-services':      'https://images.unsplash.com/photo-1558905586-b023f0806005?w=700&q=80&auto=format&fit=crop',
-  'special-services':       'https://images.unsplash.com/photo-1563453392212-326f5e854473?w=700&q=80&auto=format&fit=crop',
+  'security-services': 'https://images.unsplash.com/photo-1558905586-b023f0806005?w=700&q=80&auto=format&fit=crop',
+  'special-services': 'https://images.unsplash.com/photo-1563453392212-326f5e854473?w=700&q=80&auto=format&fit=crop',
 };
 
 interface Props { service: ServiceItem; }
@@ -21,7 +21,7 @@ interface Props { service: ServiceItem; }
 export default function ServiceDetailTemplate({ service }: Props) {
   usePageTitle(service.title);
 
-  const imgSrc  = serviceImages[service.slug] ?? serviceImages['manpower-supply'];
+  const imgSrc = serviceImages[service.slug] ?? serviceImages['manpower-supply'];
   const related = services.filter(s => s.slug !== service.slug).slice(0, 3);
 
   return (
@@ -96,8 +96,8 @@ export default function ServiceDetailTemplate({ service }: Props) {
                 <Link to="/contact" className="btn btn-primary">
                   <Phone size={16} /> Request a Quote
                 </Link>
-                <a href="https://wa.me/971588602934" target="_blank" rel="noopener noreferrer"
-                   className="btn btn-outline">
+                <a href="https://wa.me/971569326544" target="_blank" rel="noopener noreferrer"
+                  className="btn btn-outline">
                   WhatsApp Us
                 </a>
               </div>

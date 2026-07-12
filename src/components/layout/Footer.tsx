@@ -38,7 +38,7 @@ export default function Footer() {
             <div className="footer-contact-items">
               <div className="footer-contact-item">
                 <Phone size={14} />
-                <span>+971 58 860 2934</span>
+                <span>+971 56 932 6544</span>
               </div>
               <div className="footer-contact-item">
                 <Mail size={14} />
@@ -89,7 +89,7 @@ export default function Footer() {
               <Phone size={14} /> Request a Quote
             </Link>
             <a
-              href="https://wa.me/971588602934"
+              href="https://wa.me/971569326544"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-outline"
