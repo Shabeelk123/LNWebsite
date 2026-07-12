@@ -72,9 +72,17 @@ export default function Home() {
               </h1>
 
               <p className="hero-desc fade-up delay-200">
-                Lamiya Al Nujoom provides world-class facility management and
-                skilled manpower supply for industrial, commercial, and residential
-                sectors across the United Arab Emirates.
+                {/* Desktop */}
+                <span className="hero-desc-desktop">
+                  Lamiya Al Nujoom provides world-class facility management and
+                  skilled manpower supply for industrial, commercial, and residential
+                  sectors across the United Arab Emirates.
+                </span>
+                {/* Mobile */}
+                <span className="hero-desc-mobile">
+                  Professional facility management and skilled manpower solutions
+                  across the UAE for industrial, commercial, and residential projects.
+                </span>
               </p>
 
               <div className="hero-actions fade-up delay-300">
