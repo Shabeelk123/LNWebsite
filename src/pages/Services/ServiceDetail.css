@@ -1,0 +1,237 @@
+/* ServiceDetail.css — shared template for all 6 service pages */
+
+.service-hero {
+  background: var(--grad-brand);
+  padding-block: 5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-hero::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(18,180,245,0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.service-hero-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.service-hero-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.8125rem;
+  color: rgba(255,255,255,0.6);
+}
+
+.service-hero-breadcrumb a {
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.service-hero-breadcrumb a:hover { color: var(--clr-accent); }
+
+.service-hero-breadcrumb span { color: rgba(255,255,255,0.4); }
+
+.service-hero-label {
+  color: var(--clr-accent);
+  margin-bottom: 1rem;
+}
+
+.service-hero h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.15;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.service-hero p {
+  font-size: 1.125rem;
+  color: rgba(255,255,255,0.78);
+  line-height: 1.7;
+  max-width: 640px;
+}
+
+/* ─── Detail Body ─────────────────────────────────────────────── */
+.service-body {
+  background: var(--clr-bg);
+  padding-block: var(--section-gap);
+}
+
+.service-body-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.service-body-content h2 {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--clr-primary-cont);
+  margin-bottom: 1.5rem;
+}
+
+.service-bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  margin-bottom: 2.5rem;
+}
+
+.service-bullet {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.service-bullet svg {
+  color: var(--clr-accent);
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.service-bullet span {
+  font-size: 1rem;
+  color: var(--clr-on-surface-var);
+  line-height: 1.55;
+}
+
+/* Sub-categories */
+.service-sub-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.service-sub-category h3 {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--clr-accent);
+  margin-bottom: 0.75rem;
+}
+
+.service-sub-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.service-sub-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.375rem 0.875rem;
+  border-radius: var(--radius-full);
+  background: var(--clr-surface-container, #f0eded);
+  color: var(--clr-primary-cont);
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+/* Right image panel */
+.service-body-visual {
+  position: sticky;
+  top: 96px;
+}
+
+.service-image-wrap {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  aspect-ratio: 3/4;
+  background: var(--clr-surface-hi);
+  margin-bottom: 1.5rem;
+}
+
+.service-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-cta-card {
+  background: var(--grad-brand);
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  color: #fff;
+}
+
+.service-cta-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.service-cta-card p {
+  font-size: 0.9375rem;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.service-cta-card .btn { width: 100%; justify-content: center; margin-bottom: 0.5rem; }
+
+/* ─── Related services ────────────────────────────────────────── */
+.service-related {
+  background: var(--clr-surface-lo);
+  padding-block: var(--section-gap);
+}
+
+.service-related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .service-body-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .service-body-visual {
+    position: static;
+    order: -1;
+  }
+  .service-image-wrap { aspect-ratio: 16/9; }
+  .service-related-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 560px) {
+  .service-related-grid { grid-template-columns: 1fr; }
+  .service-hero { padding-block: 3rem; }
+  .service-hero h1 { font-size: clamp(1.625rem, 7vw, 2.25rem); }
+}
+
+@media (max-width: 480px) {
+  .service-hero { padding-block: 2.5rem; }
+  .service-hero p { font-size: 1rem; }
+  .service-body { padding-block: 3rem; }
+  .service-related { padding-block: 3rem; }
+  .service-related-grid { grid-template-columns: 1fr; }
+
+  /* Prevent badge wrap overflow */
+  .service-sub-items { gap: 0.375rem; }
+  .service-sub-badge { font-size: 0.75rem; padding: 0.3rem 0.625rem; }
+
+  .service-cta-card { padding: 1.5rem; }
+}
