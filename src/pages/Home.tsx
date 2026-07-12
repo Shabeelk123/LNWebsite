@@ -3,6 +3,7 @@ import {
   Award, Zap, Globe, Shield, CheckCircle,
   Users, Star, ChevronRight, Phone, ArrowRight
 } from 'lucide-react';
+import screen from '../assets/screen.png'
 import ServiceCard from '../components/ui/ServiceCard';
 import ScrollReveal from '../components/ui/ScrollReveal';
 import { usePageTitle } from '../hooks/useScrollReveal';
@@ -10,7 +11,6 @@ import services from '../data/services';
 import './Home.css';
 
 const HERO_IMG = 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80&auto=format&fit=crop';
-const ABOUT_IMG = 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=700&q=80&auto=format&fit=crop';
 
 const trustItems = [
   { Icon: Award, title: 'ISO Certified', sub: 'Quality Management' },
@@ -155,12 +155,12 @@ export default function Home() {
             <ScrollReveal className="about-image-wrap fade-in">
               <div className="about-image-main">
                 <img
-                  src={ABOUT_IMG}
+                  src={screen}
                   alt="Lamiya Al Nujoom team of facilities management professionals in Dubai"
                   loading="lazy"
                 />
               </div>
-              <div className="about-image-accent glass">
+              <div className="about-image-accent glass image-accent-desktop">
                 <div className="about-image-accent-num">15+</div>
                 <div className="about-image-accent-label">Years of UAE Market Excellence</div>
               </div>

@@ -96,6 +96,10 @@
     display: none;
   }
 
+  .image-accent-desktop {
+    display: none;
+  }
+
   .hero-desc-mobile {
     display: inline;
   }
@@ -555,9 +559,9 @@
     gap: 3rem;
   }
 
-  .about-image-wrap {
+  /* .about-image-wrap {
     display: none;
-  }
+  } */
 
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
