@@ -16,7 +16,7 @@ export default function ScrollReveal({
   children,
   className = '',
   style,
-  threshold = 0.12,
+  threshold = 0.05,
   tag: Tag = 'div',
 }: Props) {
   const ref = useRef<HTMLElement>(null);
@@ -25,9 +25,9 @@ export default function ScrollReveal({
     const el = ref.current;
     if (!el) return;
 
-    // If element is already in view on mount, reveal immediately
+    // If element is in or near viewport on mount, reveal immediately
     const rect = el.getBoundingClientRect();
-    if (rect.top < window.innerHeight) {
+    if (rect.top < window.innerHeight + 100) {
       el.classList.add('is-visible');
       return;
     }
@@ -39,11 +39,22 @@ export default function ScrollReveal({
           observer.unobserve(entry.target);
         }
       },
-      { threshold, rootMargin: '0px 0px -40px 0px' }
+      { threshold, rootMargin: '0px 0px 100px 0px' }
     );
 
     observer.observe(el);
-    return () => observer.disconnect();
+
+    // Safety fallback: reveal after 500ms to guarantee no element stays hidden (opacity: 0)
+    const fallbackTimer = setTimeout(() => {
+      if (el && !el.classList.contains('is-visible')) {
+        el.classList.add('is-visible');
+      }
+    }, 500);
+
+    return () => {
+      observer.disconnect();
+      clearTimeout(fallbackTimer);
+    };
   }, [threshold]);
 
   return (

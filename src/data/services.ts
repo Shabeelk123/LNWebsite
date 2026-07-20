@@ -12,12 +12,12 @@ export interface ServiceItem {
   imageAlt: string;
 }
 
-import home from "../assets/home.png";
+import manpower from "../assets/manpower.jpg";
 import mep from "../assets/mep.png";
 import construction from "../assets/construction.png";
 import cleaning from "../assets/cleaning.png";
 import security from "../assets/security.png";
-import screenImg from "../assets/screen.png";
+import cleaningImg from "../assets/cleaningImg.jpg";
 
 const services: ServiceItem[] = [
   {
@@ -26,7 +26,7 @@ const services: ServiceItem[] = [
     icon: 'Users',
     tagline: 'Right People. Right Skills. Right Now.',
     heroLabel: 'MANPOWER & STAFFING',
-    imageUrl: home,
+    imageUrl: manpower,
     summary:
       'Vetted, highly-skilled technical workforce ready for immediate deployment across the UAE.',
     bullets: [
@@ -179,7 +179,7 @@ const services: ServiceItem[] = [
     icon: 'Star',
     tagline: 'Beyond the Routine. Built for the Critical.',
     heroLabel: 'SPECIAL & PROJECT SERVICES',
-    imageUrl: screenImg,
+    imageUrl: cleaningImg,
     summary:
       'Bespoke maintenance, heavy deep-cleaning, and specialized project solutions for commercial and hospitality assets.',
     bullets: [

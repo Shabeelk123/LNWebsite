@@ -118,9 +118,9 @@ export default function ServiceDetailTemplate({ service }: Props) {
           </ScrollReveal>
           <div className="service-related-grid">
             {related.map((s, i) => (
-              <ScrollReveal key={s.slug} className={`fade-up delay-${(i + 1) * 100}`}>
-                <ServiceCard service={s} index={0} />
-              </ScrollReveal>
+              <div key={s.slug} className="service-related-card">
+                <ServiceCard service={s} index={i} />
+              </div>
             ))}
           </div>
           <div style={{ textAlign: 'center', marginTop: '2rem' }}>

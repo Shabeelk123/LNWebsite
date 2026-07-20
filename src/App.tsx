@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route, useParams, Navigate } from 'react-router-dom';
+import { useEffect } from 'react';
+import { BrowserRouter, Routes, Route, useParams, Navigate, useLocation } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import FloatingButtons from './components/layout/FloatingButtons';
@@ -12,6 +13,16 @@ import Contact from './pages/Contact';
 
 import services from './data/services';
 import './index.css';
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 function ServiceDetailRoute() {
   const { slug } = useParams<{ slug: string }>();
@@ -43,6 +54,7 @@ function AppLayout() {
 export default function App() {
   return (
     <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+      <ScrollToTop />
       <AppLayout />
     </BrowserRouter>
   );

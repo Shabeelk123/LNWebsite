@@ -4,6 +4,7 @@ import {
   Users, Wrench, HardHat, Sparkles, ShieldCheck, Star,
   ChevronDown, Phone
 } from 'lucide-react';
+import logo from '../../assets/logo.png';
 import './Navbar.css';
 
 const serviceLinks = [
@@ -46,7 +47,7 @@ export default function Navbar() {
         <nav className="navbar-inner" aria-label="Main navigation">
           {/* Logo */}
           <Link to="/" className="navbar-logo" aria-label="Lamiya Al Nujoom — Home">
-            <div className="logo-icon">LN</div>
+            <img src={logo} alt="Lamiya Al Nujoom" className="navbar-logo-img" />
             <div className="logo-text">
               <span className="logo-text-main">Lamiya Al Nujoom</span>
               <span className="logo-text-sub">Technical Services</span>
@@ -73,10 +74,15 @@ export default function Navbar() {
               </NavLink>
               <div className="nav-dropdown-menu" role="menu">
                 {serviceLinks.map(({ to, label, Icon }) => (
-                  <Link key={to} to={to} className="nav-dropdown-item" role="menuitem">
+                  <NavLink
+                    key={to}
+                    to={to}
+                    className={({ isActive }) => `nav-dropdown-item${isActive ? ' active' : ''}`}
+                    role="menuitem"
+                  >
                     <Icon size={14} />
                     {label}
-                  </Link>
+                  </NavLink>
                 ))}
               </div>
             </div>
@@ -130,7 +136,14 @@ export default function Navbar() {
             <div className="mobile-services-section" role="list">
               <div className="mobile-services-grid">
                 {serviceLinks.map(({ to, label }) => (
-                  <Link key={to} to={to} className="mobile-service-link" role="listitem">{label}</Link>
+                  <NavLink
+                    key={to}
+                    to={to}
+                    className={({ isActive }) => `mobile-service-link${isActive ? ' active' : ''}`}
+                    role="listitem"
+                  >
+                    {label}
+                  </NavLink>
                 ))}
               </div>
             </div>
