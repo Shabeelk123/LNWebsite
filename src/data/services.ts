@@ -5,11 +5,15 @@ export interface ServiceItem {
   tagline: string;
   summary: string;
   heroLabel: string;
+  imageUrl?: string;
   bullets: string[];
   subCategories: { label: string; items: string[] }[];
   ctaText: string;
   imageAlt: string;
 }
+
+import security from "../assets/security.png"
+import cleaning from "../assets/cleaning.png"
 
 const services: ServiceItem[] = [
   {
@@ -18,14 +22,15 @@ const services: ServiceItem[] = [
     icon: 'Users',
     tagline: 'Right People. Right Skills. Right Now.',
     heroLabel: 'MANPOWER & STAFFING',
+    imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBUfZ7dHaapHCRpb_PvrgsLQXZqOIti3EzMmzEaHMlp5_RxPgFmcT878VcXzdtE2qzvDeAbLgqsctmymy7BW3aQLlfw3Rw_3ZlequdUs3kQ_dwYwU1WbnndIUVfTuuSkTMRRenmyUa2p3BLYK6zUkjsdlH_jR2Y1aeyWPodY3420MFFtDWkO0PETdnnvvmsm1TBLjf2nHEHXn9zILhzcmbRUNFwgNI13omTvTCNXlhhq6glgRHgiOHUAnXL-ARUOKtqA4EqsfjYqnSW',
     summary:
-      'We supply fully vetted, UAE-compliant skilled, semi-skilled, and general labour to construction, industrial, and facility operations across the Emirates — mobilised fast, managed professionally.',
+      'Vetted, highly-skilled technical workforce ready for immediate deployment across the UAE.',
     bullets: [
       'Rigorous pre-deployment screening and skills assessment',
       'Full compliance with UAE labour and residency regulations',
       'Replacement guarantee within 48 hours if required',
       'Dedicated account manager for workforce coordination',
-      'Scalable headcount from 5 to 500+ personnel',
+      'Scalable headcount from 5 to 200+ personnel',
       'Available for short-term, project-based, and long-term contracts',
     ],
     subCategories: [
@@ -51,8 +56,9 @@ const services: ServiceItem[] = [
     icon: 'Wrench',
     tagline: 'Engineering Excellence. Uninterrupted Operations.',
     heroLabel: 'MEP & TECHNICAL',
+    imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBXLJCs42e24ESpQZQQsN46tm6DJ5YhtxOHQt-957yxOH99EjXvZRchqiFQMpP8RVMK-P759sPkTw5xSsPFwuDdRoaG1DHevNGNpd3qHzpoSuUyah0ACXhfqGAGwN7fyZzgKiQM_GtQqfh-9gk1_qaDXwMbMFZJBg_bShBrQnvcbFIyAyaC-mKttqlvWzLusLgYuCTZUwlZ8O45Tb2LD2g0L3j8ix0Ke5ShsExklI83vxJuchoCdjoYSbG6k3mKG7YYtvt3bIWq0sa9',
     summary:
-      'Our certified MEP teams handle mechanical, electrical, and plumbing installations and maintenance for high-rise towers, villas, and commercial complexes — ensuring zero-downtime operations and full DEWA/DM compliance.',
+      'Precision engineering and maintenance for complex climate control and electrical systems.',
     bullets: [
       'Complete MEP design, installation, and commissioning',
       'Preventive and corrective HVAC maintenance (split, ducted, VRF systems)',
@@ -80,8 +86,9 @@ const services: ServiceItem[] = [
     icon: 'HardHat',
     tagline: 'Protecting Structures. Preserving Value.',
     heroLabel: 'CIVIL & MAINTENANCE',
+    imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDJ2wn1cocaf-VT0JHvQnvmnpZSh9YUdpk9aw45OsOR9uVILLLmQyot5gENyk-qgcmXwuJSIc1WkDDE-2rxBxJbn0H2zRJmCoEvUwwSpoZXcluqIVOwzgx2itELmziQFCRiWmi2NkGpvwXhYrhHOWPTzqF1J0F0s2mpH0gjTGplgmwx-2s25hDP-yLAV9kZQgRc2V0wuHqfCQW1xjgQwxNiO4PoIPieF7F7rPRwAZ9h9Vvw6nVKBFAVkyAYLOj7ZlSa1qnBh9Tm29px',
     summary:
-      'From facade restoration to rope-access cleaning and administrative support, our civil and maintenance division keeps your property assets in peak condition while your team focuses on core business.',
+      "Expert structural works and infrastructure support for the UAE's most iconic developments.",
     bullets: [
       'High-rise facade cleaning using IRATA-trained rope-access technicians',
       'Water-fed pole and cradle system facade maintenance',
@@ -109,8 +116,9 @@ const services: ServiceItem[] = [
     icon: 'Sparkles',
     tagline: 'Spotless Environments. Professional Standards.',
     heroLabel: 'CLEANING & SOFT SERVICES',
+    imageUrl: cleaning,
     summary:
-      'We deliver comprehensive cleaning programmes for offices, residences, and industrial sites across the UAE — from routine housekeeping to specialist deep-cleans, all executed with eco-certified products and trained operatives.',
+      'Premium cleaning and soft facility management for luxury hospitality and corporate spaces.',
     bullets: [
       'Structured cleaning programmes with measurable KPIs',
       'Dedicated cleaning supervisors per site for quality assurance',
@@ -138,8 +146,8 @@ const services: ServiceItem[] = [
     icon: 'ShieldCheck',
     tagline: 'Vigilant. Reliable. SIRA Certified.',
     heroLabel: 'SECURITY SERVICES',
-    summary:
-      'Our SIRA-certified security personnel and integrated surveillance solutions protect commercial properties, residential compounds, and construction sites with round-the-clock vigilance and professional incident management.',
+    imageUrl: security,
+    summary: 'Professional security solutions and personnel for commercial and residential assets.',
     bullets: [
       'SIRA-licensed security guards with continuous training',
       'CCTV monitoring and remote video surveillance management',
@@ -167,8 +175,9 @@ const services: ServiceItem[] = [
     icon: 'Star',
     tagline: 'Beyond the Routine. Built for the Critical.',
     heroLabel: 'SPECIAL & PROJECT SERVICES',
+    imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCuxdHuUfpSSNDSiEQ0hglMrAEW4VJM1Dd3Ekg4rGGvU8kjl6osRVYi4lYMDnF4asVmAF_yUt-6t257Lg4rlOhGqy0cY2J-6ZuhN8qWBtDyOkRzs5hMZMd4hrdIZmDlER2qZcPFSQrzoMuf68w5MBA0ea7ax26ir_hqaYIsewhI1P4mfO7sUHkLtSVA34jzfnE6v0U5XxOER4XIN6TdeoZ1FmPLnCJdy4TOJbB5f-z6Bp_GwAj4ZW3H82X6SAx71pwrgt8GsZho2gV9',
     summary:
-      'When standard contracts don\'t fit the scope, our Special Services division delivers bespoke workforce and technical solutions — from post-construction cleans to event-scale mobilisations — executed on your timeline, to your specification.',
+      'Bespoke maintenance, heavy deep-cleaning, and specialized project solutions for commercial and hospitality assets.',
     bullets: [
       'Industrial and commercial deep-cleaning using advanced machinery',
       'Post-construction site clearance and handover-ready cleaning',
