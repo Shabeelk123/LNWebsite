@@ -8,9 +8,10 @@ import ServiceCard from '../components/ui/ServiceCard';
 import ScrollReveal from '../components/ui/ScrollReveal';
 import { usePageTitle } from '../hooks/useScrollReveal';
 import services from '../data/services';
+import home from '../assets/Home.png';
 import './Home.css';
 
-const HERO_IMG = 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80&auto=format&fit=crop';
+const HERO_IMG = `${home}?w=800&q=80&auto=format&fit=crop`;
 
 const trustItems = [
   { Icon: Award, title: 'ISO Certified', sub: 'Quality Management' },

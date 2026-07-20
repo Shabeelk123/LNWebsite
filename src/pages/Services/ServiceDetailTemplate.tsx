@@ -5,14 +5,15 @@ import ScrollReveal from '../../components/ui/ScrollReveal';
 import { usePageTitle } from '../../hooks/useScrollReveal';
 import services from '../../data/services';
 import type { ServiceItem } from '../../data/services';
+import { security, construction, mep } from '../../assets';
 import './ServiceDetail.css';
 
 const serviceImages: Record<string, string> = {
   'manpower-supply': 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&q=80&auto=format&fit=crop',
-  'mep-technical-services': 'https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=700&q=80&auto=format&fit=crop',
-  'civil-maintenance': 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80&auto=format&fit=crop',
+  'mep-technical-services': `${mep}?w=700&q=80&auto=format&fit=crop`,
+  'civil-maintenance': `${construction}?w=700&q=80&auto=format&fit=crop`,
   'cleaning-soft-services': 'https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=700&q=80&auto=format&fit=crop',
-  'security-services': 'https://images.unsplash.com/photo-1558905586-b023f0806005?w=700&q=80&auto=format&fit=crop',
+  'security-services': security,
   'special-services': 'https://images.unsplash.com/photo-1563453392212-326f5e854473?w=700&q=80&auto=format&fit=crop',
 };
 
