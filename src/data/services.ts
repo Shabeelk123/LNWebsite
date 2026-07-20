@@ -112,7 +112,7 @@ const services: ServiceItem[] = [
     summary:
       'We deliver comprehensive cleaning programmes for offices, residences, and industrial sites across the UAE — from routine housekeeping to specialist deep-cleans, all executed with eco-certified products and trained operatives.',
     bullets: [
-      'ISO-aligned cleaning programmes with measurable KPIs',
+      'Structured cleaning programmes with measurable KPIs',
       'Dedicated cleaning supervisors per site for quality assurance',
       'Eco-friendly and COSHH-compliant chemical usage',
       '24/7 reactive cleaning for emergencies and spills',

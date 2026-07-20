@@ -14,10 +14,10 @@ import './Home.css';
 const HERO_IMG = `${home}?w=800&q=80&auto=format&fit=crop`;
 
 const trustItems = [
-  { Icon: Award, title: 'ISO Certified', sub: 'Quality Management' },
+  { Icon: Award, title: 'Quality Assured', sub: 'Strict QA/QC Standards' },
   { Icon: Shield, title: 'SIRA Licensed', sub: 'Security Services' },
   { Icon: Globe, title: 'All Emirates', sub: 'Service Coverage' },
-  { Icon: Users, title: '500+ Professionals', sub: 'Deployed Workforce' },
+  { Icon: Users, title: '200+ Professionals', sub: 'Deployed Workforce' },
 ];
 
 const whyItems = [
@@ -42,13 +42,6 @@ const whyItems = [
     desc: 'Seamless service delivery across Dubai, Abu Dhabi, Sharjah, Ajman, and all other Emirates.',
   },
 ];
-
-// const whyStats = [
-//   { num: '15+',  label: 'Years of UAE Experience' },
-//   { num: '200+', label: 'Corporate Clients' },
-//   { num: '98%',  label: 'Client Retention Rate' },
-//   { num: '24/7', label: 'Emergency Support' },
-// ];
 
 export default function Home() {
   usePageTitle('');   // base title only on home page
@@ -97,8 +90,8 @@ export default function Home() {
 
               <div className="hero-stats fade-up delay-400">
                 {[
-                  { num: '15+', label: 'Years Experience' },
-                  { num: '200+', label: 'Clients Served' },
+                  { num: '5+', label: 'Years Experience' },
+                  { num: '50+', label: 'Clients Served' },
                   { num: '7', label: 'Emirates Covered' },
                   { num: '24/7', label: 'Emergency Support' },
                 ].map(({ num, label }) => (
@@ -121,7 +114,7 @@ export default function Home() {
               </div>
               <div className="hero-badge glass">
                 <div className="hero-badge-title">Dubai's #1 Technical Partner</div>
-                <div className="hero-badge-sub">Trusted by 200+ facility managers</div>
+                <div className="hero-badge-sub">Trusted by 50+ facility managers</div>
               </div>
             </div>
           </div>
@@ -162,7 +155,7 @@ export default function Home() {
                 />
               </div>
               <div className="about-image-accent glass image-accent-desktop">
-                <div className="about-image-accent-num">15+</div>
+                <div className="about-image-accent-num">5+</div>
                 <div className="about-image-accent-label">Years of UAE Market Excellence</div>
               </div>
             </ScrollReveal>
@@ -185,7 +178,7 @@ export default function Home() {
                 {[
                   { Icon: Award, title: 'Certified Expertise', desc: 'All technicians fully trained and UAE-compliant.' },
                   { Icon: Zap, title: 'Fast Deployment', desc: 'Rapid mobilisation for projects of any scale.' },
-                  { Icon: Shield, title: 'Quality Assured', desc: 'ISO-aligned processes and measurable KPIs.' },
+                  { Icon: Shield, title: 'Quality Assured', desc: 'Rigorous QA/QC processes and measurable KPIs.' },
                   { Icon: Globe, title: 'UAE-Wide Reach', desc: 'Operations spanning all seven Emirates.' },
                 ].map(({ Icon, title, desc }) => (
                   <div key={title} className="about-feature">

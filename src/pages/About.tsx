@@ -9,19 +9,19 @@ import './Pages.css';
 const MISSION_IMG = 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=700&q=80&auto=format&fit=crop';
 
 const values = [
-  { Icon: Award,  title: 'Quality First',       desc: 'ISO-aligned processes ensure every deliverable meets international standards, with no exceptions.' },
-  { Icon: Shield, title: 'Integrity Always',     desc: 'Transparent pricing, honest timelines, and direct accountability from enquiry to project closure.' },
+  { Icon: Award, title: 'Quality First', desc: 'Rigorous QA/QC standards ensure every deliverable meets the highest UAE industry standards, with no exceptions.' },
+  { Icon: Shield, title: 'Integrity Always', desc: 'Transparent pricing, honest timelines, and direct accountability from enquiry to project closure.' },
   { Icon: Target, title: 'Precision Execution', desc: 'Technical accuracy and attention to detail define every task — from a single repair to a multi-discipline AMC.' },
-  { Icon: Users,  title: 'People-Centric',      desc: 'Our people are our product. We invest heavily in training, welfare, and career development for all staff.' },
-  { Icon: Zap,    title: 'Agile Response',      desc: '48-hour mobilisation capability and a 24/7 emergency support line ensure we\'re always ready.' },
-  { Icon: Globe,  title: 'UAE Specialists',     desc: 'A decade of operating across all seven Emirates gives us unmatched local market knowledge.' },
+  { Icon: Users, title: 'People-Centric', desc: 'Our people are our product. We invest heavily in training, welfare, and career development for all staff.' },
+  { Icon: Zap, title: 'Agile Response', desc: '48-hour mobilisation capability and a 24/7 emergency support line ensure we\'re always ready.' },
+  { Icon: Globe, title: 'UAE Specialists', desc: 'A decade of operating across all seven Emirates gives us unmatched local market knowledge.' },
 ];
 
 const stats = [
-  { num: '15+',  label: 'Years of UAE Experience' },
-  { num: '500+', label: 'Deployed Professionals' },
-  { num: '200+', label: 'Corporate Clients' },
-  { num: '98%',  label: 'Client Retention Rate' },
+  { num: '5+', label: 'Years of UAE Experience' },
+  { num: '200+', label: 'Deployed Professionals' },
+  { num: '50+', label: 'Corporate Clients' },
+  { num: '98%', label: 'Client Retention Rate' },
 ];
 
 export default function About() {

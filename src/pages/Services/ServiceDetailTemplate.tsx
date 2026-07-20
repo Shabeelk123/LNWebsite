@@ -5,7 +5,9 @@ import ScrollReveal from '../../components/ui/ScrollReveal';
 import { usePageTitle } from '../../hooks/useScrollReveal';
 import services from '../../data/services';
 import type { ServiceItem } from '../../data/services';
-import { security, construction, mep } from '../../assets';
+import security from '../../assets/security.png';
+import construction from '../../assets/construction.png';
+import mep from '../../assets/mep.png';
 import './ServiceDetail.css';
 
 const serviceImages: Record<string, string> = {
