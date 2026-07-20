@@ -12,8 +12,12 @@ export interface ServiceItem {
   imageAlt: string;
 }
 
-import security from "../assets/security.png"
-import cleaning from "../assets/cleaning.png"
+import home from "../assets/home.png";
+import mep from "../assets/mep.png";
+import construction from "../assets/construction.png";
+import cleaning from "../assets/cleaning.png";
+import security from "../assets/security.png";
+import screenImg from "../assets/screen.png";
 
 const services: ServiceItem[] = [
   {
@@ -22,7 +26,7 @@ const services: ServiceItem[] = [
     icon: 'Users',
     tagline: 'Right People. Right Skills. Right Now.',
     heroLabel: 'MANPOWER & STAFFING',
-    imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBUfZ7dHaapHCRpb_PvrgsLQXZqOIti3EzMmzEaHMlp5_RxPgFmcT878VcXzdtE2qzvDeAbLgqsctmymy7BW3aQLlfw3Rw_3ZlequdUs3kQ_dwYwU1WbnndIUVfTuuSkTMRRenmyUa2p3BLYK6zUkjsdlH_jR2Y1aeyWPodY3420MFFtDWkO0PETdnnvvmsm1TBLjf2nHEHXn9zILhzcmbRUNFwgNI13omTvTCNXlhhq6glgRHgiOHUAnXL-ARUOKtqA4EqsfjYqnSW',
+    imageUrl: home,
     summary:
       'Vetted, highly-skilled technical workforce ready for immediate deployment across the UAE.',
     bullets: [
@@ -56,7 +60,7 @@ const services: ServiceItem[] = [
     icon: 'Wrench',
     tagline: 'Engineering Excellence. Uninterrupted Operations.',
     heroLabel: 'MEP & TECHNICAL',
-    imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBXLJCs42e24ESpQZQQsN46tm6DJ5YhtxOHQt-957yxOH99EjXvZRchqiFQMpP8RVMK-P759sPkTw5xSsPFwuDdRoaG1DHevNGNpd3qHzpoSuUyah0ACXhfqGAGwN7fyZzgKiQM_GtQqfh-9gk1_qaDXwMbMFZJBg_bShBrQnvcbFIyAyaC-mKttqlvWzLusLgYuCTZUwlZ8O45Tb2LD2g0L3j8ix0Ke5ShsExklI83vxJuchoCdjoYSbG6k3mKG7YYtvt3bIWq0sa9',
+    imageUrl: mep,
     summary:
       'Precision engineering and maintenance for complex climate control and electrical systems.',
     bullets: [
@@ -86,7 +90,7 @@ const services: ServiceItem[] = [
     icon: 'HardHat',
     tagline: 'Protecting Structures. Preserving Value.',
     heroLabel: 'CIVIL & MAINTENANCE',
-    imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDJ2wn1cocaf-VT0JHvQnvmnpZSh9YUdpk9aw45OsOR9uVILLLmQyot5gENyk-qgcmXwuJSIc1WkDDE-2rxBxJbn0H2zRJmCoEvUwwSpoZXcluqIVOwzgx2itELmziQFCRiWmi2NkGpvwXhYrhHOWPTzqF1J0F0s2mpH0gjTGplgmwx-2s25hDP-yLAV9kZQgRc2V0wuHqfCQW1xjgQwxNiO4PoIPieF7F7rPRwAZ9h9Vvw6nVKBFAVkyAYLOj7ZlSa1qnBh9Tm29px',
+    imageUrl: construction,
     summary:
       "Expert structural works and infrastructure support for the UAE's most iconic developments.",
     bullets: [
@@ -175,7 +179,7 @@ const services: ServiceItem[] = [
     icon: 'Star',
     tagline: 'Beyond the Routine. Built for the Critical.',
     heroLabel: 'SPECIAL & PROJECT SERVICES',
-    imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCuxdHuUfpSSNDSiEQ0hglMrAEW4VJM1Dd3Ekg4rGGvU8kjl6osRVYi4lYMDnF4asVmAF_yUt-6t257Lg4rlOhGqy0cY2J-6ZuhN8qWBtDyOkRzs5hMZMd4hrdIZmDlER2qZcPFSQrzoMuf68w5MBA0ea7ax26ir_hqaYIsewhI1P4mfO7sUHkLtSVA34jzfnE6v0U5XxOER4XIN6TdeoZ1FmPLnCJdy4TOJbB5f-z6Bp_GwAj4ZW3H82X6SAx71pwrgt8GsZho2gV9',
+    imageUrl: screenImg,
     summary:
       'Bespoke maintenance, heavy deep-cleaning, and specialized project solutions for commercial and hospitality assets.',
     bullets: [

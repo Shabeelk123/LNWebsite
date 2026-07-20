@@ -20,7 +20,8 @@ export default function ServiceCard({ service }: Props) {
           src={service.imageUrl}
           alt={service.imageAlt || service.title}
           className="service-card-img"
-          loading="lazy"
+          loading="eager"
+          decoding="async"
         />
       )}
 
