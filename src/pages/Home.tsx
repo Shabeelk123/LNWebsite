@@ -3,15 +3,13 @@ import {
   Award, Zap, Globe, Shield, CheckCircle,
   Users, Star, ChevronRight, Phone, ArrowRight
 } from 'lucide-react';
-import screen from '../assets/screen.png'
+import screen from '../assets/screen.png';
 import ServiceCard from '../components/ui/ServiceCard';
 import ScrollReveal from '../components/ui/ScrollReveal';
 import { usePageTitle } from '../hooks/useScrollReveal';
 import services from '../data/services';
 import home from '../assets/Home.png';
 import './Home.css';
-
-const HERO_IMG = `${home}?w=800&q=80&auto=format&fit=crop`;
 
 const trustItems = [
   { Icon: Award, title: 'Quality Assured', sub: 'Strict QA/QC Standards' },
@@ -49,7 +47,13 @@ export default function Home() {
   return (
     <main>
       {/* ═══════════════════ HERO ═══════════════════════════════════ */}
-      <section className="hero" aria-label="Hero">
+      <section
+        className="hero"
+        aria-label="Hero"
+        style={{
+          backgroundImage: `linear-gradient(120deg, rgba(7, 16, 34, 0.85) 0%, rgba(10, 24, 50, 0.60) 45%, rgba(6, 14, 30, 0.40) 100%), url(${home})`
+        }}
+      >
         <div className="container">
           <div className="hero-grid">
             {/* Left content — animates immediately on load */}
@@ -100,21 +104,6 @@ export default function Home() {
                     <div className="hero-stat-label">{label}</div>
                   </div>
                 ))}
-              </div>
-            </div>
-
-            {/* Right visual */}
-            <div className="hero-visual fade-in delay-300">
-              <div className="hero-image-frame">
-                <img
-                  src={HERO_IMG}
-                  alt="Skilled UAE construction and facilities technicians at work"
-                  loading="eager"
-                />
-              </div>
-              <div className="hero-badge glass">
-                <div className="hero-badge-title">Dubai's #1 Technical Partner</div>
-                <div className="hero-badge-sub">Trusted by 50+ facility managers</div>
               </div>
             </div>
           </div>
