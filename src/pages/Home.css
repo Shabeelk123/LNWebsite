@@ -80,7 +80,7 @@
 
 .hero-title {
   font-family: var(--font-heading);
-  font-size: clamp(2.25rem, 4.5vw, 3.25rem);
+  font-size: clamp(2.5rem, 4.5vw, 3.5rem);
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.02em;
@@ -97,11 +97,11 @@
 
 .hero-desc {
   font-family: var(--font-body);
-  font-size: 1.125rem;
+  font-size: 1.15rem;
   line-height: 1.7;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.85);
   margin-bottom: 2.5rem;
-  max-width: 480px;
+  max-width: 580px;
 }
 
 /* Desktop text — shown by default, hidden on mobile */

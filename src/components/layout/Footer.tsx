@@ -33,7 +33,7 @@ export default function Footer() {
             </Link>
             <p className="footer-tagline">
               Premier technical services provider in Dubai, UAE. Specialising in
-              manpower supply and full-spectrum MEP maintenance since 2010.
+              manpower supply and full-spectrum MEP maintenance since 2020.
             </p>
             <div className="footer-contact-items">
               <div className="footer-contact-item">

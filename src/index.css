@@ -36,8 +36,8 @@
   --font-body:     'Inter', sans-serif;
 
   /* Spacing */
-  --container-max:        1280px;
-  --gutter:               24px;
+  --container-max:        1400px;
+  --gutter:               32px;
   --section-gap:          120px;
   --section-gap-mobile:   64px;
 
@@ -99,6 +99,11 @@ button { border: none; background: none; cursor: pointer; font-family: var(--fon
 @media (max-width: 768px) {
   :root { --gutter: 16px; }
   .section { padding-block: var(--section-gap-mobile); }
+}
+
+@media (min-width: 1440px) {
+  :root { --container-max: 1440px; }
+  html { font-size: 17px; }
 }
 
 /* ─── Typography Classes ──────────────────────────────────────── */

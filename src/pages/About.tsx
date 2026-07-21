@@ -36,7 +36,7 @@ export default function About() {
             <span className="label-caps page-hero-overline">About Us</span>
             <h1>A Trusted Partner for Technical Excellence in the UAE</h1>
             <p>
-              Since 2010, Lamiya Al Nujoom Technical Services has been bridging the
+              Since 2020, Lamiya Al Nujoom Technical Services has been bridging the
               gap between technical complexity and operational simplicity for
               facility managers across the Emirates.
             </p>
@@ -65,13 +65,13 @@ export default function About() {
                 and that your facilities will remain fully operational.
               </p>
               <p>
-                Founded in Dubai in 2010, we have grown from a specialist manpower
+                Founded in Dubai in 2020, we have grown from a specialist manpower
                 provider into a full-service technical services company, serving
                 over 200 corporate clients across hospitality, construction,
                 healthcare, retail, and government sectors.
               </p>
               <p>
-                Our workforce of 500+ professionals is our greatest asset. Every
+                Our workforce of 200+ professionals is our greatest asset. Every
                 technician is screened, trained to UAE standards, and supported by
                 experienced supervisors and a dedicated account management team.
               </p>
