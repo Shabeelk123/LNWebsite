@@ -8,7 +8,7 @@ import ServiceCard from '../components/ui/ServiceCard';
 import ScrollReveal from '../components/ui/ScrollReveal';
 import { usePageTitle } from '../hooks/useScrollReveal';
 import services from '../data/services';
-import home from '../assets/Home.png';
+import home from '../assets/home.webp';
 import './Home.css';
 
 const trustItems = [
@@ -47,13 +47,18 @@ export default function Home() {
   return (
     <main>
       {/* ═══════════════════ HERO ═══════════════════════════════════ */}
-      <section
-        className="hero"
-        aria-label="Hero"
-        style={{
-          backgroundImage: `linear-gradient(120deg, rgba(7, 16, 34, 0.85) 0%, rgba(10, 24, 50, 0.60) 45%, rgba(6, 14, 30, 0.40) 100%), url(${home})`
-        }}
-      >
+      <section className="hero" aria-label="Hero">
+        {/* High-Priority HTML Background Image */}
+        <img
+          src={home}
+          alt="Lamiya Al Nujoom Technical Services UAE"
+          className="hero-bg-img"
+          fetchPriority="high"
+          loading="eager"
+          decoding="async"
+        />
+        <div className="hero-bg-overlay" />
+
         <div className="container">
           <div className="hero-grid">
             {/* Left content — animates immediately on load */}
