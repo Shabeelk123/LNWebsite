@@ -8,7 +8,7 @@ import ServiceCard from '../components/ui/ServiceCard';
 import ScrollReveal from '../components/ui/ScrollReveal';
 import { usePageTitle } from '../hooks/useScrollReveal';
 import services from '../data/services';
-import home from '../assets/home.webp';
+import home from '../assets/home.jpeg';
 import './Home.css';
 
 const trustItems = [
