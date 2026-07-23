@@ -2,7 +2,8 @@
 // Serverless function — runs on Netlify's Node.js runtime (NOT in the browser)
 // Required env vars (set in Netlify dashboard → Site → Environment variables):
 //   EMAIL_USER  → info@lamiyaalnujoom.com
-//   EMAIL_PASS  → your GoDaddy Workspace Email password
+//   EMAIL_PASS  → Google App Password (NOT your Google account password)
+//                  Generate at: myaccount.google.com → Security → App Passwords
 
 const nodemailer = require('nodemailer');
 
@@ -27,17 +28,14 @@ exports.handler = async (event) => {
     return { statusCode: 400, body: JSON.stringify({ error: 'Missing required fields' }) };
   }
 
-  // GoDaddy Workspace Email SMTP transporter
+  // Google Workspace SMTP transporter
   const transporter = nodemailer.createTransport({
-    host: 'smtpout.secureserver.net',
+    host: 'smtp.gmail.com',
     port: 465,
     secure: true,               // SSL on port 465
     auth: {
       user: process.env.EMAIL_USER, // info@lamiyaalnujoom.com
-      pass: process.env.EMAIL_PASS, // your GoDaddy email password
-    },
-    tls: {
-      rejectUnauthorized: false,  // GoDaddy sometimes needs this
+      pass: process.env.EMAIL_PASS, // Google App Password (16-char, no spaces)
     },
   });
 
