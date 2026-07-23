@@ -3,7 +3,7 @@ import {
   Award, Zap, Globe, Shield, CheckCircle,
   Users, Star, ChevronRight, Phone, ArrowRight
 } from 'lucide-react';
-import screen from '../assets/screen.png';
+import screen from '../assets/screen.webp';
 import ServiceCard from '../components/ui/ServiceCard';
 import ScrollReveal from '../components/ui/ScrollReveal';
 import { usePageTitle } from '../hooks/useScrollReveal';
