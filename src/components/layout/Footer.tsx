@@ -42,7 +42,7 @@ export default function Footer() {
               </div>
               <div className="footer-contact-item">
                 <Mail size={14} />
-                <span>info@lamiyaalnujoom.ae</span>
+                <span>info@lamiyaalnujoom.com</span>
               </div>
               <div className="footer-contact-item">
                 <MapPin size={14} />

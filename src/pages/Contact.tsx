@@ -19,7 +19,7 @@ const SERVICES = [
 const CONTACT_DETAILS = [
   { Icon: Phone, label: 'Phone', val: '+971 569326544', href: 'tel:+971569326544' },
   { Icon: MessageCircle, label: 'WhatsApp', val: 'Message us on WhatsApp', href: 'https://wa.me/971569326544' },
-  { Icon: Mail, label: 'Email', val: 'info@lamiyaalnujoom.ae', href: 'mailto:info@lamiyaalnujoom.ae' },
+  { Icon: Mail, label: 'Email', val: 'info@lamiyaalnujoom.com', href: 'mailto:info@lamiyaalnujoom.com' },
   { Icon: MapPin, label: 'Office', val: '401 NGI Building, Port Saeed, Deira, Dubai, UAE', href: '#map' },
   { Icon: Clock, label: 'Hours', val: '24/7 Emergency | Office: Sun–Thu 8am–6pm', href: undefined },
 ];
@@ -168,7 +168,7 @@ export default function Contact() {
 
                   <div className={`form-field${errors.email ? ' error' : ''}`}>
                     <label htmlFor="cf-email">Email Address *</label>
-                    <input id="cf-email" name="email" type="email" placeholder="ahmed@company.ae"
+                    <input id="cf-email" name="email" type="email" placeholder="ahmed@company.com"
                       value={formData.email} onChange={handleChange} autoComplete="email" />
                     {errors.email && <span className="form-error-msg">{errors.email}</span>}
                   </div>
