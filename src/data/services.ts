@@ -12,12 +12,12 @@ export interface ServiceItem {
   imageAlt: string;
 }
 
-import manpower from "../assets/manpower.jpg";
-import mep from "../assets/mep.png";
-import construction from "../assets/construction.png";
-import cleaning from "../assets/cleaning.png";
-import security from "../assets/security.png";
-import cleaningImg from "../assets/cleaningImg.jpg";
+import manpower from "../assets/manpower.webp";
+import mep from "../assets/mep.webp";
+import construction from "../assets/construction.webp";
+import cleaning from "../assets/cleaning.webp";
+import security from "../assets/security.webp";
+import cleaningImg from "../assets/cleaningImg.webp";
 
 const services: ServiceItem[] = [
   {
