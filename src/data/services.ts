@@ -12,7 +12,7 @@ export interface ServiceItem {
   imageAlt: string;
 }
 
-import manpower from "../assets/manpower.webp";
+import manpower from "../assets/manpower.jpg";
 import mep from "../assets/mep.webp";
 import construction from "../assets/construction.webp";
 import cleaning from "../assets/cleaning.webp";
