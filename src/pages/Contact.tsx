@@ -42,8 +42,8 @@ export default function Contact() {
     if (!formData.email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email))
       e.email = 'A valid email address is required.';
     if (!formData.service) e.service = 'Please select a service.';
-    if (!formData.message.trim() || formData.message.length < 20)
-      e.message = 'Please provide a message of at least 20 characters.';
+    if (!formData.message.trim() || formData.message.length < 10)
+      e.message = 'Please provide a message of at least 10 characters.';
     setErrors(e);
     return Object.keys(e).length === 0;
   };
