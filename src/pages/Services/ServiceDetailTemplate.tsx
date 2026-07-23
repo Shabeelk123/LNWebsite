@@ -7,9 +7,9 @@ import services from '../../data/services';
 import type { ServiceItem } from '../../data/services';
 import security from '../../assets/security.webp';
 import construction from '../../assets/construction.webp';
-import manpower from '../../assets/manpower.webp';
+import manpower from '../../assets/manpower.jpg';
 import cleaning from '../../assets/cleaning.webp';
-import cleaningImg from '../../assets/cleaningImg.webp';
+import cleaningImg from '../../assets/cleaningImg.jpg';
 import mep from '../../assets/mep.webp';
 import './ServiceDetail.css';
 
