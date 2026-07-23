@@ -1,6 +1,6 @@
 import ScrollReveal from '../components/ui/ScrollReveal';
 import { usePageTitle } from '../hooks/useScrollReveal';
-import educationImg from "../assets/education.png";
+import educationImg from "../assets/education.webp";
 import './Pages.css';
 
 const industries = [
