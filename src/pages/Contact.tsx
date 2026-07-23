@@ -33,6 +33,7 @@ export default function Contact() {
   const [errors, setErrors] = useState<Errors>({});
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const [sendError, setSendError] = useState<string | null>(null);
 
   const validate = (): boolean => {
     const e: Errors = {};
@@ -57,10 +58,22 @@ export default function Contact() {
     e.preventDefault();
     if (!validate()) return;
     setSubmitting(true);
-    await new Promise(r => setTimeout(r, 1200));
-    setSubmitting(false);
-    setSubmitted(true);
-    setFormData({ firstName: '', lastName: '', email: '', phone: '', company: '', service: '', message: '' });
+    setSendError(null);
+    try {
+      const res = await fetch('/.netlify/functions/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Something went wrong.');
+      setSubmitted(true);
+      setFormData({ firstName: '', lastName: '', email: '', phone: '', company: '', service: '', message: '' });
+    } catch (err: unknown) {
+      setSendError(err instanceof Error ? err.message : 'Failed to send. Please try again or contact us directly.');
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -128,6 +141,12 @@ export default function Contact() {
               {submitted && (
                 <div className="form-success" role="alert">
                   ✓ Thank you! Your enquiry has been received. Our team will contact you within 24 hours.
+                </div>
+              )}
+
+              {sendError && (
+                <div className="form-error-banner" role="alert">
+                  ⚠ {sendError}
                 </div>
               )}
 
