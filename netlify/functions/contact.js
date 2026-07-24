@@ -106,8 +106,8 @@ exports.handler = async (event) => {
 
           <p style="color: #555;">For urgent requirements, please contact us directly:</p>
           <ul style="color: #222; line-height: 1.8;">
-            <li>📞 <a href="tel:+971569326544" style="color: #1a3a5c;">+971 569 326 544</a></li>
-            <li>💬 <a href="https://wa.me/971569326544" style="color: #1a3a5c;">WhatsApp</a></li>
+            <li>📞 <a href="tel:+971565566039" style="color: #1a3a5c;">+971 569 326 544</a></li>
+            <li>💬 <a href="https://wa.me/971565566039" style="color: #1a3a5c;">WhatsApp</a></li>
             <li>📧 <a href="mailto:info@lamiyaalnujoom.com" style="color: #1a3a5c;">info@lamiyaalnujoom.com</a></li>
           </ul>
 

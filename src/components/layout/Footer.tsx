@@ -89,7 +89,7 @@ export default function Footer() {
               <Phone size={14} /> Request a Quote
             </Link>
             <a
-              href="https://wa.me/971569326544"
+              href="https://wa.me/971565566039"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-outline"
